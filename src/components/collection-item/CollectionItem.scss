@@ -1,0 +1,52 @@
+.collection-item {
+	width: 22%;
+	display: flex;
+	flex-direction: column;
+	height: 350px;
+	align-items: center;
+	overflow: hidden;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	.background-image {
+		width: 100%;
+		height: 95%;
+		background-size: cover;
+		background-position: center;
+		margin-bottom: 5px;
+	}
+
+	.collection-footer {
+		width: 100%;
+		height: 5%;
+		display: flex;
+		justify-content: space-between;
+		font-size: 18px;
+
+		.name {
+			width: 90%;
+			margin-bottom: 15px;
+		}
+
+		.price {
+			width: 10%;
+		}
+	}
+}
+.zoom {
+	transition: transform 6s cubic-bezier(0.075, 0.82, 0.165, 1);
+	-webkit-transition: transform 6s cubic-bezier(0.075, 0.82, 0.165, 1);
+	-moz-transition: transform 6s cubic-bezier(0.075, 0.82, 0.165, 1);
+	-ms-transition: transform 6s cubic-bezier(0.075, 0.82, 0.165, 1);
+	-o-transition: transform 6s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+	&:hover {
+		transform: scale(1.05);
+		-webkit-transform: scale(1.05);
+		-moz-transform: scale(1.05);
+		-ms-transform: scale(1.05);
+		-o-transform: scale(1.05);
+}
+}
