@@ -5,7 +5,7 @@ const CollectionItem = ({ id, name, price, imageUrl }) => {
    return (
       <div className='collection-item'>
          <div
-            className='background-image zoom'
+            className='background-image zoom-in-sm'
             style={{
                backgroundImage: `url(${imageUrl})`
             }}
