@@ -16,7 +16,7 @@ class SignIn extends Component {
    //**************** Functions ****************//
    handleSubmit = async (e) => {
       e.preventDefault();
-      const {email, password} = this.state;
+      const { email, password } = this.state;
 
       try {
          await auth.signInWithEmailAndPassword(email, password);
@@ -28,7 +28,7 @@ class SignIn extends Component {
       } catch (error) {
          console.error(error);
       }
-      
+
    };
 
    handleChange = (e) => {
@@ -62,6 +62,7 @@ class SignIn extends Component {
                <div className="buttons">
                   <CustomButton type='submit'> Sign in </CustomButton>
                   <CustomButton
+                     type='button'
                      onClick={signInWithGoogle}
                      isGoogleSignIn> Sign in with Google </CustomButton>
                </div>
